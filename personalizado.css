@@ -100,23 +100,17 @@ h1
     padding: 20px;
     margin: 20px;
 }
-/*    seccion de centrado de contenido
-.contenedor {
+    /*seccion de centrado de contenido*/
+
+    /* Segmento de cuadro de dialogo */
+.sabores
+{
     max-width: 100%;
     margin: 5px 5px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-}*/
-
-    /* Segmento de cuadro de dialogo */
-.sabores
-{
-    margin: 25px;
-    display: flex;
-    max-width: 550px;
-    position: relative;
 }
 .sabores select
 {
@@ -145,7 +139,7 @@ h1
     display: none;
 }
 
-    /*Seccion del calPendario*/
+    /*Seccion del calendario*/
 .calendario
 {
     margin: 25px;
@@ -163,7 +157,7 @@ h1
 }
 .calendariomini:hover
 {
-    box-shadow: 7px 10px 20px 0px var(--four--color);
+    box-shadow: 15px 18px 10px 0px var(--four--color);
 }
 .tiempo
 {
@@ -182,6 +176,6 @@ h1
 }
 .tiempomini:hover
 {
-    box-shadow: 7px 10px 20px 0px var(--four--color);
+    box-shadow: 15px 18px 10px 0px var(--four--color);
 }
 /*Sección del bonton enviar*/
