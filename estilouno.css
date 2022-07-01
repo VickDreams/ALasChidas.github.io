@@ -20,16 +20,16 @@ html
     /* Logo y Menu de navegación */
 header
 {
-    position: inherit;
+    position: fixed;
     top: 0;
     left: 0;
-    width: auto;
-    padding: 20px 100px;
+    width: 100%;
+    padding: 10px 100px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     z-index: 1000;
-    background: var(--primary-color);
+    backdrop-filter: blur(10px);
 }
 header .logo
 {
@@ -63,6 +63,8 @@ header ul li a
     text-decoration: none;
     user-select: none;
     color: var(--three-color);
+    overflow: hidden;
+    transition: all .7s ease;
 }
 header ul li a.active,
 header ul li a:hover
@@ -71,7 +73,6 @@ header ul li a:hover
     background: var(--three-color);
     border-radius: 30px;
 }
-
 
     /* Cuerpo de la página */
 body::-webkit-scrollbar
@@ -92,7 +93,7 @@ body
 
 .contexto
 {
-    height: 450px;
+    margin-top: 100px;
     width: auto;
     background-size: cover;
     background-position: center;
@@ -103,9 +104,9 @@ body
 .contexto h1
 {
     top: 0;
-    padding: 125px;
+    padding: 100px;
     text-align: center;
-    font-size: 8.1rem;
+    font-size: 9rem;
 }
 .contextodos
 {
@@ -174,6 +175,8 @@ body
     opacity: 0;
     visibility: hidden;
     text-align: center;
+    font-weight: bold;
+    transition: all .8s ease;
 }
 .contenedor figure:hover > .capa
 {
@@ -205,9 +208,10 @@ body
     color: var(--six-color);
     border-radius: 50px;
     letter-spacing: 1px;
-    font-size: 3.0rem;
+    font-size: 3rem;
     font-weight: bold;
     padding: 10px 5px;
+    transition: all .9s ease;
 }
 .contenedor figure a:hover
 {
@@ -242,6 +246,7 @@ body
     text-decoration: none;
     box-shadow: 0px 10px 7px 0px var(--six-color);
     font-size: 25px;
+    transition: all .8s ease;
 }
 .redesociales li a:hover
 {

@@ -18,16 +18,16 @@ html
     /* logo y menu de navegación */
 header
 {
-    position: inherit;
+    position: fixed;
     top: 0;
     left: 0;
-    width: auto;
+    width: 100%;
     padding: 20px 100px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     z-index: 1000;
-    background: var(--primary-color);
+    backdrop-filter: blur(10px);
 }
 header .logo
 {
@@ -61,6 +61,8 @@ header ul li a
     text-decoration: none;
     user-select: none;
     color: var(--three-color);
+    overflow: hidden;
+    transition: all .7s ease;
 }
 header ul li a.active,
 header ul li a:hover
@@ -86,9 +88,7 @@ body
 /* centrar contenido */
 .bigcontenedor
 {
-    padding: 50px;
-    max-width: 100%;
-    margin: 5px 5px;
+    margin-top: 130px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -129,6 +129,7 @@ p
     text-decoration: none;
     box-shadow: 0px 10px 7px 0px var(--four-color);
     font-size: 25px;
+    transition: all .8s ease;
 }
 .redesociales li a:hover
 {

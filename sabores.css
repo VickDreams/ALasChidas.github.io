@@ -1,0 +1,348 @@
+:root
+{
+    --primary-color: white;
+    --second-color: rgb(254, 195, 9);
+    --three-color: rgb(219, 31, 37);
+    --four-color: black;
+    --five-color: #6b221f;
+    --six-color: #d04e2c;
+    --seven-color: #ffd701;
+    --eight-color: #583027;
+    --nine-color: #e7d7b5;
+    --ten-color: #d2b54c;
+    --eleven-color: #7b2c1b;
+}
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html
+{
+    font-size: 62.5%;
+}
+    /* Logo y Menu de navegación */
+header
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    z-index: 1000;
+    backdrop-filter: blur(10px);
+}
+header .logo
+{
+    position: relative;
+    display: inline-block;
+}
+header img
+{
+    width: 100px;
+}
+header a
+{
+    user-select: none;
+}
+header ul
+{
+    position: relative;
+    display: flex;
+}
+header ul li
+{
+    list-style: none;
+}
+header ul li a
+{
+    display: inline-block;
+    font-weight: 800;
+    font-size: 2rem;
+    margin-left: 10px;
+    padding: 8px 10px;
+    text-decoration: none;
+    user-select: none;
+    color: var(--three-color);
+    transition: all .5s ease;
+}
+header ul li a.active,
+header ul li a:hover
+{
+    color: var(--primary-color);
+    background: var(--three-color);
+    border-radius: 30px;
+}
+    /* Cuerpo de la página */
+body::-webkit-scrollbar
+{
+    width: 1rem;
+}
+body::-webkit-scrollbar-thumb
+{
+    background: var(--second-color);
+    border-radius: 10px;
+}
+body
+{
+    background: var(--primary-color);
+}
+    
+    /* titulos */
+
+.contexto
+{
+    margin-top: 175px;
+    height: auto;
+    width: auto;
+    background-size: cover;
+    background-position: center;
+    background: linear-gradient(280deg, var(--second-color), var(--three-color));
+    background-attachment: fixed;
+    overflow: hidden;
+}
+.contexto h2
+{
+    top: 0;
+    padding: 100px;
+    text-align: center;
+    font-size: 9rem;
+}
+.contextodos h2
+{
+    text-align: center;
+    font-size: 10rem;
+    font-weight: bold;
+}
+.contextodos p
+{
+    font-size: 2em;
+    text-align: justify;
+    font-weight: bold;
+}
+
+
+    /* centrar contenido */
+.bigcontenedor
+{
+    max-width: 100%;
+    margin: 5px 5px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+    /*seccion de sabores*/
+.sabores
+{
+    background: var(--five-color);
+    display: inline-block;
+    margin: 30px;
+    width: 60%;
+    border-radius: 15px;
+    color: white;
+    transition: all 1s ease;
+}
+.sabores:hover
+{
+    box-shadow: 15px 15px 10px 0px rgba(0, 0, 0);
+}
+img
+{
+    float: left;
+    max-height: 250px;
+    max-width: 250px;
+    margin: 30px 30px;
+}
+h3
+{
+    margin-top: 2%;
+    margin-bottom: 5%;
+    font-size: 5rem;
+    font-weight: bold;
+    text-align: center;
+}
+hr
+{
+    height: 5px;
+    margin-right: 30px;
+    border: none;
+    background: white;
+    border-radius: 50px;
+}
+p
+{
+    margin: 30px 20px;
+    margin-top: 7%;
+    font-size: 1.7rem;
+    font-weight: bold;
+    text-align: justify;
+}
+
+    /*sabores sección 2*/
+
+.sabores2
+{
+    background: var(--six-color);
+    display: inline-block;
+    float: right;
+    position: relative;
+    margin: 30px;
+    width: 60%;
+    border-radius: 15px;
+    color: white;
+    transition: all 1s ease;
+}
+.sabores2:hover
+{
+    box-shadow: -15px 15px 10px 0px rgba(0, 0, 0);
+}
+    
+    /*seccion de sabore3*/
+
+.sabores3
+{
+    background: var(--seven-color);
+    display: inline-block;
+    margin: 30px;
+    width: 60%;
+    border-radius: 15px;
+    color: white;
+    transition: all 1s ease;
+}
+.sabores3:hover
+{
+    box-shadow: 15px 15px 10px 0px rgba(0, 0, 0);
+}
+
+    /*sabores sección 4*/
+
+.sabores4
+{
+    background: var(--eight-color);
+    display: inline-block;
+    float: right;
+    position: relative;
+    margin: 30px;
+    width: 60%;
+    border-radius: 15px;
+    color: white;
+    transition: all 1s ease;
+}
+.sabores4:hover
+{
+    box-shadow: -15px 15px 10px 0px rgba(0, 0, 0);
+}
+
+    /*seccion de sabore5*/
+
+.sabores5
+{
+    background: var(--nine-color);
+    display: inline-block;
+    margin: 30px;
+    width: 60%;
+    border-radius: 15px;
+    color: white;
+    transition: all 1s ease;
+}
+.sabores5:hover
+{
+    box-shadow: 15px 15px 10px 0px rgba(0, 0, 0);
+}
+
+    /*sabores sección 7*/
+
+.sabores6
+{
+    background: var(--ten-color);
+    display: inline-block;
+    float: right;
+    position: relative;
+    margin: 30px;
+    width: 60%;
+    border-radius: 15px;
+    color: white;
+    transition: all 1s ease;
+}
+.sabores6:hover
+{
+    box-shadow: -15px 15px 10px 0px rgba(0, 0, 0);
+}
+    /*seccion de sabore7*/
+
+.sabores7
+{
+    background: var(--eleven-color);
+    display: inline-block;
+    margin: 30px;
+    width: 60%;
+    border-radius: 15px;
+    color: white;
+    transition: all 1s ease;
+}
+.sabores7:hover
+{
+    box-shadow: 15px 15px 10px 0px rgba(0, 0, 0);
+}
+
+    /* estilo a los iconos */
+.redesociales
+{
+    width: auto;
+    margin: 50px;
+    bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.redesociales li
+{
+    list-style: none;
+}
+.redesociales li a
+{
+    display: flex;
+    margin-right: 15px;
+    width: 50px;
+    height: 50px;
+    color: var(--second-color);
+    background: var(--three-color);
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s ease-in-out;
+    text-decoration: none;
+    box-shadow: 0px 10px 7px 0px var(--four-color);
+    font-size: 25px;
+    transition: all .8s ease;
+}
+.redesociales li a:hover
+{
+    background: var(--second-color);
+    box-shadow: 0px 0px 0px 0px;
+    transform: translateY(-10px);
+}
+.redesociales li a:hover .fa
+{
+    color: var(--three-color);
+}
+/* pie de la página */
+footer
+{
+    width: auto;
+    height: auto;
+    font-weight: bold;
+    background: var(--three-color);
+    color: var(--primary-color);
+}
+footer p
+{
+    text-align: center;
+    font-size: 2.1rem;
+}

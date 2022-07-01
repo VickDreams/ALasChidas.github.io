@@ -20,16 +20,16 @@ html
     /* Logo y Menu de navegación */
 header
 {
-    position: inherit;
+    position: fixed;
     top: 0;
     left: 0;
-    width: auto;
-    padding: 20px 100px;
+    width: 100%;
+    padding: 10px 100px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     z-index: 1000;
-    background: var(--primary--color);
+    backdrop-filter: blur(10px);
 }
 header .logo
 {
@@ -63,6 +63,7 @@ header ul li a
     text-decoration: none;
     user-select: none;
     color: var(--three--color);
+    transition: all .7s ease;
 }
 header ul li a.active,
 header ul li a:hover
@@ -74,10 +75,10 @@ header ul li a:hover
     /* titulos */
 .titulo
 {
+    margin-top: 100px;
     width: auto;
     background-size: cover;
     background-position: center;
-    /* background-position: 50% -100%; */
     background: var(--second--color);
     background-image: cover;
     background-attachment: fixed;
@@ -85,9 +86,10 @@ header ul li a:hover
 }
 .titulo h1
 {
-    padding: 125px;
+    top: 0;
+    padding: 100px;
     text-align: center;
-    font-size: 8.1rem;
+    font-size: 9rem;
 }
 img
 {
@@ -101,22 +103,16 @@ h1
     margin: 20px;
 }
 /*    seccion de centrado de contenido
-.contenedor {
-    max-width: 100%;
-    margin: 5px 5px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-}*/
 
     /* Segmento de cuadro de dialogo */
 .sabores
 {
-    margin: 25px;
+    max-width: 100%;
+    margin-top: 60px;
     display: flex;
-    max-width: 550px;
-    position: relative;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 .sabores select
 {
@@ -135,6 +131,7 @@ h1
     border: solid 0.1em var(--four--color);
     font-size: 2rem;
     font-weight: bold;
+    transition: all .5s ease;
 }
 .sabores select:hover
 {
@@ -160,10 +157,11 @@ h1
     color: var(--primary--color);
     font-size: 2rem;
     font-weight: bold;
+    transition: all .5s ease;
 }
 .calendariomini:hover
 {
-    box-shadow: 7px 10px 20px 0px var(--four--color);
+    box-shadow: 15px 18px 10px 0px var(--four--color);
 }
 .tiempo
 {
@@ -179,9 +177,10 @@ h1
     color: var(--primary--color);
     font-size: 2rem;
     font-weight: bold;
+    transition: all .5s ease;
 }
 .tiempomini:hover
 {
-    box-shadow: 7px 10px 20px 0px var(--four--color);
+    box-shadow: 15px 18px 10px 0px var(--four--color);
 }
 /*Sección del bonton enviar*/
