@@ -17,26 +17,39 @@
 </head>
 <body>
 
+    <!-- seccion de loader -->
+    <div class="lds-circle loader" id="loader"><div></div></div>
+
+
     <!-- menu de navegación -->
     <header>
         <a href="index.html" class="logo"><img src="img/logo.png" alt=""></a>
         <ul>
             <li> <a href="index.html">Home</a> </li>
             <li> <a href="menu.html">Menú</a> </li>
-            <li> <a class="active" href="quienessomos.html">Quienes Somos</a> </li>
+            <li> <a href="quienessomos.html">Quienes Somos</a> </li>
             <li> <a href="ubicacion.html">Ubicación</a> </li>
         </ul>
     </header>
+
     <div class="contexto">
         <h2>Sabores</h2>
     </div>
 
+    <div class="categorias">
+        <a href="menu.html">Todos</a>
+        <a href="alitas.html">Alitas</a>
+        <a href="boneless.html">Boneless</a>
+        <a href="snacks.html">Snacks</a>
+        <a href="sabores.html" class="active">Sabores</a>
+    </div>
 
+<div class="bigcontenedor">
     <div class="sabores">
         <img src="img/salsas/bufalo.png" alt="">
         <div class="contenido">
             <h3>BUFALO</h3>
-        <hr>
+        <hr class="cardhr">
         <p>La salsa Búfalo es picante, agria y dulce a la vez. La adición de mantequilla derretida le da un sabor cremoso a mantequilla, un perfil de sabor que no se encuentra a menudo en la salsa picante. El tipo de chile más tradicional en este tipo de salsa es la Cayena.</p>
         </div>
     </div>
@@ -44,7 +57,7 @@
         <img src="img/salsas/red.png" alt="">
         <div class="contenido">
             <h3>RED ORIGINAL</h3>
-        <hr>
+        <hr class="cardhr">
         <p>La salsa de pimienta de cayena original RedHot de Frank está elaborada a partir de 5 ingredientes simples protagonizados por una mezcla premium de pimientos de cayena añejos selectos que ofrece constantemente la mezcla perfecta de sabor y calor.</p>
         </div>
     </div>
@@ -52,7 +65,7 @@
         <img src="img/salsas/mango.png" alt="">
         <div class="contenido">
             <h3>MANGO HABANERO</h3>
-        <hr>
+        <hr class="cardhr">
         <p>Esta salsa es parecida al pico de gallo , todos sus ingredientes van picados, mezclado y aderezados. La diferencia es que unos ingredientes se asan para dar un sabor tostado fenomenal . Es una salsa muy amigable que sirve para acompañar cualquier tipo de marisco o pescado.</p>
         </div>
     </div>
@@ -60,7 +73,7 @@
         <img src="img/salsas/bbq.png" alt="">
         <div class="contenido">
             <h3>BBQ</h3>
-        <hr>
+        <hr class="cardhr">
         <p>La salsa barbacoa o conocida en inglés como BBQ sauce o Barbecue sauce, es una salsa utilizada como aderezo de ciertos platos a base de carne. Como lo indica su nombre, es un acompañamiento de la carne asada que realza los sabores ahumados de la barbacoa.</p>
         </div>
     </div>
@@ -68,7 +81,7 @@
         <img src="img/salsas/ajo.png" alt="">
         <div class="contenido">
             <h3>AJO PARMESANO</h3>
-        <hr>
+        <hr class="cardhr">
         <p>Salsa cremosa de intenso sabor a ajo, queso parmesano y especias. Saladita pero sin picante. Puedes usarla también como aderezo o como dip e incluso como base de tu salsa personalizada para dar cremosidad y sabor.</p>
         </div>
     </div>
@@ -76,7 +89,7 @@
         <img src="img/salsas/lemon.png" alt="">
         <div class="contenido">
             <h3>LEMON PEPPER</h3>
-        <hr>
+        <hr class="cardhr">
         <p>Acidita y especiada. Hecha con una mezcla de pimientas, limón amarillo, sal y otras especias como cebolla y ajo que le dan mucho sabor. Puede utilizarse como salsa o como aderezo.</p>
         </div>
     </div>
@@ -84,24 +97,51 @@
         <img src="img/salsas/tamarindo.png" alt="">
         <div class="contenido">
             <h3>PELON, PELON, RICO</h3>
-        <hr>
+        <hr class="cardhr">
         <p>Tamarindo es una botella con sabor a salsa de tamarindo y chile. Ingredientes: Azúcar, agua, jarabe de maíz, chile en polvo, ácido cítrico (E330), sal yodada, goma de xantano (E415), glicerina, sabores y colores artificiales, color caramelo (E150A), ácido tartárico (E334), chile y lecitina de soja.</p>
         </div>
     </div>
+</div>
 
-        <!-- sección de redes sociales -->
-<ul class="redesociales">
-    <li><a href="https://www.facebook.com/AlasChidasToluca" target="-blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-    <li><a href="#" target="-blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-    <li><a href="#" target="-blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-    <li><a href="#" target="-blank"><i class="fa fa-reddit" aria-hidden="true"></i></a></li>
-    <li><a href="#" target="-blank"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
-    <li><a href="#" target="-blank"><i class="fa fa-whatsapp" aria-hidden="true"></i></a></li>
-    <li><a href="#" target="-blank"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a></li>
-</ul>
     <!-- pie de la página -->
     <footer>
-        <p>® Todos Los Derechos Reservados 2022</p>
+
+        <div class="container_footer">
+            <div class="box_footer">
+                <div class="logo">
+                    <img src="img/logo.ico" alt="">
+                </div>
+                <div class="redes">
+                <a href="#" target="-blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                <a href="pedir.html" target="-blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                <a href="pedir.html" target="-blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                <a href="pedir.html" target="-blank"><i class="fa fa-reddit" aria-hidden="true"></i></a>
+                <a href="pedir.html" target="-blank"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+                <a href="pedir.html" target="-blank"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+                <a href="pedir.html" target="-blank"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
+                </div>
+            </div>
+
+            <div class="box_footer">
+                <h2>Servicios Al Cliente</h2>
+                <a href="#">Encuesta de Satisfacción</a>
+                <a href="#">Facturación</a>
+            </div>
+
+            <div class="box_footer">
+                <h2>Más Infomación</h2>
+                <a href="#">Terminos y Condiciones</a>
+                <a href="#">Aviso de Privacidad</a>
+                <a href="#">Contactanos</a>
+            </div>
+        </div>
+
+        <div class="box_copyright">
+            <hr>
+            <p>Todos Los Derechos Reservados ® 2022 Alas Chidas</p>
+        </div>
+
     </footer>
+    <script src="js/main.js"></script>
 </body>
 </html>

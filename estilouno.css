@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+
+
 :root
 {
     --primary-color: white;
-    --second-color: rgb(254, 195, 9);
+    --second-color: rgb(254, 197, 11);
     --three-color: rgb(219, 31, 37);
     --four-color: ;
     --six-color: black;
@@ -12,6 +15,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
 }
 html
 {
@@ -23,13 +27,14 @@ header
     position: fixed;
     top: 0;
     left: 0;
+    margin-bottom: 100px;
     width: 100%;
     padding: 10px 100px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     z-index: 1000;
-    backdrop-filter: blur(10px);
+    background: var(--primary-color);
 }
 header .logo
 {
@@ -64,7 +69,7 @@ header ul li a
     user-select: none;
     color: var(--three-color);
     overflow: hidden;
-    transition: all .7s ease;
+    transition: all .5s ease;
 }
 header ul li a.active,
 header ul li a:hover
@@ -89,25 +94,78 @@ body
     background: var(--primary-color);
 }
 
-/* titulos */
+    /* seccion del loader */
 
+.lds-circle 
+{
+  display: inline-block;
+  transform: translateZ(1px);
+}
+.lds-circle > div
+{
+  display: inline-block;
+  position: relative;
+  width: 450px;
+  height: 340px;
+  background: url(img/logo.ico);
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  animation: lds-circle 5s cubic-bezier(0, 0.5, 0.8, 1) infinite;
+}
+@keyframes lds-circle {
+  0%, 100% {
+    animation-timing-function: cubic-bezier(0.5, 0, 1, 0.5);
+  }
+  0% {
+    transform: rotateY(0deg);
+  }
+  50% {
+    transform: rotateY(1800deg);
+    animation-timing-function: cubic-bezier(0, 0.5, 0.5, 1);
+  }
+  100% {
+    transform: rotateY(3600deg);
+  }
+}
+.loader
+{
+    background: var(--six-color);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100000;
+    clip-path: circle(300% at 100% 0%);
+    transition: clip-path 3s ease-in-out;
+}
+.loader2
+{
+    clip-path: circle(0% at 0% 100%);
+}
+    
+    /* slider */
+
+    /* titulos */
 .contexto
 {
     margin-top: 100px;
+    height: 50vh;
     width: auto;
-    background-size: cover;
-    background-position: center;
     background: var(--second-color);
-    background-attachment: fixed;
-    overflow: hidden;
 }
-.contexto h1
+.contexto h2
 {
     top: 0;
     padding: 100px;
     text-align: center;
     font-size: 9rem;
 }
+
 .contextodos
 {
     background: var(--three-color);
@@ -217,58 +275,111 @@ body
 {
     color: var(--three-color);
 }
-/* estilo a los iconos */
-.redesociales
+.mini_promo
 {
-    margin: 50px;
-    bottom: 50px;
-    display: flex;
-    justify-content: left;
-    align-items: center;
+    background: var(--six-color);
+    margin: 25px;
+    font-size: 1rem;
+    font-weight: bold;
 }
-.redesociales li
-{
-    list-style: none;
-}
-.redesociales li a
-{
-    position: relative;
-    display: flex;
-    margin-right: 15px;
-    width: 50px;
-    height: 50px;
-    color: var(--second-color);
-    background: var(--three-color);
-    border-radius: 50%;
-    justify-content: center;
-    align-items: center;
-    transition: 0.2s ease-in-out;
-    text-decoration: none;
-    box-shadow: 0px 10px 7px 0px var(--six-color);
-    font-size: 25px;
-    transition: all .8s ease;
-}
-.redesociales li a:hover
-{
-    background: var(--second-color);
-    box-shadow: 0px 0px 0px 0px;
-    transform: translateY(-10px);
-}
-.redesociales li a:hover .fa
-{
-    color: var(--three-color);
-}
+
+
 /* pie de la página */
 footer
 {
-    width: auto;
-    height: auto;
-    font-weight: bold;
-    background: var(--three-color);
-    color: var(--primary-color);
+    width: 100%;
+    padding: 50px 0;
+    background-image: url(img/background-footer.svg);
+    background-size: cover;
 }
-footer p
+
+.container_footer
 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.box_footer
+{
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+}
+.box_footer .logo img
+{
+    max-width: 250px;
+}
+
+.box_footer .redes
+{
+    max-width: 350px;
+    text-decoration: none;
+    margin-top: 20px;
+    font-size: 5rem;
+    font-weight: bold;
+    color: var(--second-color);
+}
+
+.box_footer h2
+{
+    margin-bottom: 30px;
+    font-size: 3.4rem;
+    font-weight: bold;
+}
+
+.box_footer a
+{
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 2rem;
+    text-decoration: none;
+    color: var(--six-color);
+}
+
+.box_footer a:hover
+{
+    color: var(--three-color);
+}
+
+.box_footer a .fa
+{
+    padding: 16px;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    color: var(--six-color);
+    border-radius: 50%;
+    align-items: center;
+    font-size: 3.5rem;
+    text-decoration: none;
+    transition: all .5s ease;
+}
+
+.box_footer a .fa:hover
+{
+    color: var(--three-color);
+    box-shadow: 0px 0px 0px 0px;
+    transform: translateY(-10px);
+}
+
+hr
+{
+    height: 5px;
+    border: none;
+    background: var(--three-color);
+    border-radius: 50px;
+}
+
+.box_copyright
+{
+    max-width: 1200px;
+    margin: auto;
     text-align: center;
-    font-size: 2.1rem;
+    padding: 0 40px;
+    font-size: 3rem;
+    font-weight: bold;
 }
